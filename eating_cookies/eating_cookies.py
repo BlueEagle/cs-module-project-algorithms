@@ -38,9 +38,8 @@ def eating_cookies(n):
     elif n == 3:
         return 4
     elif n == 4:
-        return eating_cookies(2) + eating_cookies(3)
+        return 3 + eating_cookies(3)
     elif n == 5:
-        print(eating_cookies(2) + eating_cookies(3) + eating_cookies(4))
         return eating_cookies(2) + eating_cookies(3) + eating_cookies(4)
     elif n == 6:
         return eating_cookies(3) + eating_cookies(4) + eating_cookies(5)
