@@ -9,11 +9,9 @@ def sliding_window_max(nums, k):
     for i in range(len(nums)-k+1):
         window = nums[i:i+k]
         largest = False
-        for item in window:
-            if not largest:
-                largest = item
-            if item > largest:
-                largest = item
+        for j in range(len(window)):
+            if not largest or window[j] > largest:
+                largest = window[j]
         output.append(largest)
     print(output)
     return output
